@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body {
+    background-image: url(https://img.freepik.com/vetores-premium/ilustracao-colorida-do-planeta-terra-em-fundo-azul-com-nuvens_117177-237.jpg);
+    background-repeat: no-repeat;
+    background-color: #acf5f8;
+    background-position: center 100px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    cursor: default;
+    background: #000000;
+    color: white;
+    font-size: 2.3em;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#pergunta {
+    cursor: default;
+    background: green;
+    border: darkgreen solid 5px; border-radius: 5px;
+    color: yellow;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    max-width: 300px;
+    padding: 5px;
+}
+
+#opcoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #004cce;
+    border: #001c4d solid 5px; border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    background-color: #00389a;
+    transform: translateY(-1px);
+}
+
+button:active{
+    transform: translateY(3px);
+    cursor: progress;
+}
+
+.correto {
+    background-color: #8BC34A;
+    border: green solid 5px;
+    border-radius: 5px;
+    font-size: 1.8em;
+    margin-left: 100px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.incorreto {
+    background-color: #FF5722;
+    border: orangered solid 5px;
+    border-radius: 5px;
+    font-size: 1.8em;
+    margin-left: 100px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.final{
+    color: #003932;
+    background-color: yellow;
+    border: #ffde22 solid 5px;
+    border-radius: 5px;
+    font-size: 1.8em;
+    margin-left: 100px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.9em;
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    padding-left: 568px;
+    padding-right: 539px;
+    margin-left: -8px;
+    margin-right: -8px;
+    cursor: default;
+    border-top: #2d2d2d 5px solid;
+}
+
+img{
+    width: 400px;
+    height: 500px;
+}
+
+.esquerda{
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.direita{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
