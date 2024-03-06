@@ -2,16 +2,17 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="shortcut icon" type="imagex/png" href="https://cdn-icons-png.flaticon.com/512/171/171322.png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Sobre Tudo (Quase Tudo)</title>
+    <title>Teste sua Inteligência</title>
 </head>
 
 <body>
 
     <div class="quiz-container">
-        <h1>Quiz de perguntas e Respostas</h1>
+        <h1>Quiz de História</h1>
         <div id="pergunta"><span></span></div>
         <div id="opcoes"></div>
         <div id="resultado" class="final"></div>
@@ -23,9 +24,9 @@
     <script>
         const perguntas = [
             {
-                pergunta: "Qual das alternativas não é um pais de primeiro mundo?",
-                opcoes: ["Estados Unidos", "Rússia", "Austrália", "Japão"],
-                resposta: "Rússia"
+                pergunta: "Qual foi o primeiro pais do mundo?",
+                opcoes: ["Japão", "Peru", "Austrália", "Egito"],
+                resposta: "Japão"
             },
             {
                 pergunta: "Qual a cor do cavalo branco de Napoleão?",
@@ -34,28 +35,28 @@
             },
             {
                 pergunta: 'Quem foi o pai da física?',
-                opcoes: ["Galileu Galilei", "Isaac Newton", "Albert Einstein", "Stephen Hawking"],
+                opcoes: ["Isaac Newton", "Galileu Galilei", "Albert Einstein", "Stephen Hawking"],
                 resposta: "Galileu Galilei"
             },
             {
-                pergunta: "Quem foi a mulher com mais medalhas olimpicas da história?",
-                opcoes: ["Serena Williams", "lebron james", "Larissa Latynina", "Pelé"],
-                resposta: "Larissa Latynina"
+                pergunta: "Quem foi a mãe da radiação?",
+                opcoes: ["Lavinia Fontana", "Elizabeth I", "Marie Curie", "Rosa Parks"],
+                resposta: "Marie Curie"
             },
             {
-                pergunta: "Seguindo a lógida de operações, qual destas é a alternativa correta de: 6+6/6",
-                opcoes: ["1", "4", "2", "7"],
-                resposta: "7"
+                pergunta: "Quem foi Gregor Mendel?",
+                opcoes: ["Um Professor", "Um Pai", "Um Ativista", "Um Monge"],
+                resposta: "Um Pai"
             },
             {
                 pergunta: "Ultima pergunta, está preparado?",
-                opcoes: ["Sim", "Não"],
+                opcoes: ["Sim", "Sim"],
                 resposta: "Sim"
             },
             {
-                pergunta: "Qual deles tem dois zeros dois quatro",
-                opcoes: ["2014", "0044", "0024", "2044"],
-                resposta: "0024"
+                pergunta: "Em que ano acontesceu a Abolição da Escravidão no Brasil?",
+                opcoes: ["1863", "1869", "1886", "1888"],
+                resposta: "1888"
             },
             {
                 pergunta: "Gostou do quiz?",
@@ -95,7 +96,7 @@
 
             indicePerguntaAtual++;
             if (indicePerguntaAtual < perguntas.length) {
-                setTimeout(carregarPergunta, 2000);
+                setTimeout(carregarPergunta, 500);
             } else {
                 resultadoElemento.textContent = "Quiz concluído!";
                 resultadoElemento.className = "final";
